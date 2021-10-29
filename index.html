@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="mixer-box">
+        <div class="result-color">default</div>
+       <div class="color-ratios">
+        <div class="red-ratio">
+            <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideRed" name="slideRed" value="0" min="0" max="255">
+            <div>RED: <span id="valRed">0</span></div>
+        </div>
+        <div class="green-ration">
+            <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideGreen" name="slideGreen" value="255" min="0" max="255">
+            <div>GREEN: <span id="valGreen">255</span></div>
+        </div>
+        <div class="blue-ratio">
+            <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideBlue" name="slideBlue" value="58" min="0" max="255">
+            <div>BLUE: <span id="valBlue">58</span></div>
+        </div>
+       </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
